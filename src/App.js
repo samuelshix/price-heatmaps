@@ -39,6 +39,7 @@ function Data(props) {
       try {
         var res = await fetch("https://api.coingecko.com/api/v3/coins/"+asset+"/market_chart?vs_currency=usd&days=max")
       var data = await res.json()
+      console.log(data)
       var prices = data.prices.map((point)=>point[1])
       var WEEKS;
       var granularity = 30;
