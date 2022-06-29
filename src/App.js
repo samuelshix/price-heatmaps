@@ -114,6 +114,7 @@ function Data(props) {
       }
     }
     fetchPrices()
+    console.log(chartData)
   }, [asset]);
   const [chartData, setChartData] = useState({}) 
   return (
