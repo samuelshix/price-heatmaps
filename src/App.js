@@ -33,7 +33,6 @@ const movingAvg = (data, window) => {
 function Data(props) {
   const [hasError, setHasError] = useState(false);
   var asset = props.asset.toLowerCase()
-  console.log(props)
   useEffect(() => {
     const fetchPrices = async () => {
       setHasError(false);
